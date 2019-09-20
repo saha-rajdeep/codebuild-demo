@@ -27,7 +27,7 @@ def lambda_handler(event, context):
     longitude = data['results'][0]['geometry']['location']['lng']
     formatted_address = data['results'][0]['formatted_address']
  
-    # printing the output of the landmark --xxx added
+    # printing the output of the landmark --xxx added for stack3
     print("Latitude:%s\nLongitude:%s\nFormatted Address:%s"
       %(latitude, longitude,formatted_address))
     output={"address":formatted_address} 
