@@ -25,3 +25,9 @@ Resources:
       MemorySize: 256
       Timeout: 15
       Role: arn:aws:iam::719217631821:role/lambda_basic_execution
+      
+artifacts:
+  type: zip
+  files:
+    - template-export.yml
+
