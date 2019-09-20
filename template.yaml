@@ -6,7 +6,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: lambda_function.lambda_handler
-      Runtime: Python3.6
+      Runtime: python3.6
       CodeUri: 's3://rajsaha-codedeploy/app-helloworld-APICall.zip'
       MemorySize: 256
       Timeout: 15
