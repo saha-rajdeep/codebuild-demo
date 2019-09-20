@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Outputs the time
+Resources:
+  TimeFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: Python3.6
+      CodeUri: 's3://rajsaha-codedeploy/app-helloworld-APICall.zip'
+      MemorySize: 256
+      Timeout: 15
+      Role: arn:aws:iam::719217631821:role/lambda_basic_execution
