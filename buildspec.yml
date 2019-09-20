@@ -8,6 +8,9 @@ phases:
       - echo Build started on `date`
       - echo Compiling the Python code...
       - pip install requests -t .
+      - >-
+        aws cloudformation package --template template.yml --s3-bucket
+        rajsaha-codedeploy --output-template template-export.yml
   post_build:
     commands:
       - echo Build completed on `date`
